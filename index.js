@@ -8,7 +8,7 @@ function playAudio() {
 function checkGameOver() {
     const loose = document.querySelector(".redirectloose")
     clickCount++;
-    if (clickCount > 6) {
+    if (clickCount >= 6) {
         loose.style.display = "flex"
     }
 }
