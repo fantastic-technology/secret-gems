@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    body{
+        background: url(img/images\ \(16\).jpeg);
+        color: white;
+    }
+    .menu-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        font-size: xx-large;
+        background: linear-gradient(
+            50deg,
+            rgba(255, 255, 255, 0.4) 12%,
+            rgba(255, 255, 255, 0.1) 77%
+          );
+          background-blend-mode: screen;
+          box-shadow: 0px 4px 24px 1px rgba(0, 0, 0, 0.28);
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          height: 50vh;
+          width: 50%;
+          border-radius: 10px;
+    }
+    .section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+    .flex-strong strong{
+        background-color: crimson;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow:
+        inset -1px -1px 20px 0px rgba(0, 0, 0, 0.23),
+        inset 1px 1px 24px 0px crimson;
+        border-radius: 20px;
+        padding: 5px;
+    }
+    .flex-strong strong:hover{
+        color: cyan;
+    }
+    @media screen and (max-width: 950px) {
+        .flex-strong strong{
+            width: 40vw;
+        }
+        .menu-box{
+            width: 70%;
+        }
+    }
+</style>
+<body>
+   <section class="section">
+    <div class="menu-box">
+        <strong>Main Menu</strong>
+        <div class="flex-strong" style="flex-direction: column; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px;">
+           <a href="game.html"> <strong>Play</strong></a>
+            <a href="game.html"><strong>Resume</strong></a>
+            <strong onclick="restart()">Restart</strong>
+            <a href="help.html"><strong>Help</strong></a>
+            <menu>@Fantastic-Tech</menu>
+        </div>
+    </div>
+   </section>
+   <script src="index.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+</html>

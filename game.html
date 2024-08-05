@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sceret Gems</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inide+Flower|Lobster">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <nav>
+        <button class="mm">Main menu</button>
+    </nav>
+    <audio class="music1" src="music/stranger-things-124008.mp3" autoplay loop></audio>
+    <div class="redirectwin">
+        <h1>Level Completed!</h1>
+        <button onclick="cont()" class="cont">Continue</button>
+    </div>
+    <div class="redirectloose">
+        <h1 style="font-size: xx-large;">Game over!</h1>
+        <p style="font-size: larger;">Your max attempt is 6</p>
+        <button onclick="rest()" class="cont">Restart level</button>
+    </div>
+    <section class="box">
+        <h1 onclick="showlevel()" class="title">Secret Gems</h1>
+        <div class="flex-game">
+            <img style="height: 60px;" src="./img/diamond5-removebg-preview.png" class="img" alt="">
+            <article class="game-data">
+                <div style="color: white;">Level: <span class="levelvalue">1</span></div>
+                <div class="flex-btn">
+                    <button class="btnplay" onclick="playAudio()">Play Music</button>
+                   </div>
+            </article>
+        </div>
+        <div class="flexbx">
+            <div class="bx" onclick="open1()"><img  src="./img/diamond1-removebg-preview.png" class="bx1" alt=""></div>
+            <div class="bx" onclick="open2()"><img src="./img/diamond2-removebg-preview.png" alt="" class="bx2"></div>
+            <div class="bx" onclick="open3()"><img src="./img/diamond3-removebg-preview.png" class="bx3" alt=""></div>
+        </div>
+        <div class="flexbx">
+            <div class="bx" onclick="open4()"><img src="./img/diamond5-removebg-preview.png" class="bx4" alt=""></div>
+            <div class="bx" onclick="open5()"><img src="./img/diamond6-removebg-preview.png" class="bx5" alt=""></div>
+            <div class="bx" onclick="open6()"><img src="./img/diamond7-removebg-preview.png" class="bx6" alt=""></div>
+        </div>
+        <div class="flexbx">
+            <div class="bx" onclick="open7()"><img src="./img/diamond8-removebg-preview.png" class="bx7" alt=""></div>
+            <div class="bx" onclick="open8()"><img src="./img/diamond9-removebg-preview.png" class="bx8" alt=""></div>
+            <div class="bx" onclick="open9()"><img src="./img/diamond10-removebg-preview.png" class="bx9" alt=""></div>
+        </div>
+        <div class="flexbx">
+            <div class="bx" onclick="open10()"><img src="./img/diamond1-removebg-preview.png" class="bx10" alt=""></div>
+            <div class="bx" onclick="open11()"><img src="./img/diamond13-removebg-preview.png" class="bx11" alt=""></div>
+            <div class="bx"  onclick="open12()"><img src="./img/diamond3-removebg-preview.png" class="bx12" alt=""></div>
+        </div>
+    </section>
+    <footer>
+        Fantastic-Tech
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });        
+    </script>
+</body>
+</html>
